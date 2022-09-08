@@ -1,0 +1,73 @@
+/* body{
+    color:blue
+}
+h1{
+    color:red
+}
+h2{
+    color:green
+}
+#lib-header{
+    color:purple
+}
+.para{
+    color:gray
+} */
+
+:root{
+    --primary-color:#3b82f6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap');
+body{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/** container **/
+.container{
+    padding-left:1rem;
+    padding-right:1rem;
+    /* padding order is: top right bottom left 
+    if we only give top and right padding then 
+    top will also be applied to botttom and right 
+    will also be applied to left
+    ex- padding: 1rem 1rem; */
+}
+.container-center{
+    max-width: 600px;
+    margin: auto;}
+
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+}
+.link-primary{
+    background-color:var(--primary-color);
+    border-radius:0.7rem;
+    color: white;
+}
+/* The Block, Element, Modifier methodology 
+(commonly referred to as BEM) is a popular naming
+ convention for classes in HTML and CSS. */
+
+.link-secondary{
+    background-color: var(--primary-color);
+    border-radius:0.5rem;
+    border :1px solid var(--primary-color);
+
+}
+hr{
+    margin:2rem 0rem;
+}
+
+/* lists */
+/* to remove the bullet in list */
+.list-non-bullet{
+    list-style-type: none;
+}
+/* for inline list */
+.list-item-inline{
+    display:inline;
+    padding:0rem 0.5rem;
+}
