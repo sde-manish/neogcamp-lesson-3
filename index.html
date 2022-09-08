@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>component library</title>
+<!-- css 1st way of styling by using style tag -->
+    <!-- <style>
+        body{
+            color:red
+        }
+    </style> -->
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- css 2nd way of styling using style sttributes -->
+    <!--  <h1 style="color:blue">Manish's component library</h1> -->
+    <!-- <h1 id="lib-header">Manish's component library</h1> -->
     <h1>Manish's component library</h1>
     <P>I am attending neog.camp and i want to make a library which would make all my project look good.</P>
 
@@ -16,22 +26,24 @@
     <h1>This is the biggest heading.</h1>
     <h2>This is the second biggest.</h2>
     <p>Let me show you normal text. This is a free flowing and will wrap at the end like a paragraph.</p>
+    <p>This paragrapgh will have a <strong>Bold</strong> text </p>
+    <!-- <smaller class="para">This is relatively smaller text.</smaller> -->
     <smaller>This is relatively smaller text.</smaller>
     <hr size="4px"><h2>@container</h2> <!-- The <div> HTML element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element). -->
     
     <h2>Fluid container</h2>
-    <dive>This is a fluid container. it will go till the end of this page.</dive> <!-- <dive> is like placeholder in the page. it is used divide the page in different section so later CSS can be used easily. -->
+    <dive class="container">This is a fluid container. it will go till the end of this page.</dive> <!-- <dive> is like placeholder in the page. it is used divide the page in different section so later CSS can be used easily. -->
 
     <h2>Center container</h2>
-    <dive>This is a center container. it will go till spcified width.</dive> <!-- we usee CSS to make it look better. -->
+    <dive class="container container-center">This is a center container. it will go till spcified width.</dive> <!-- we usee CSS to make it look better. -->
     <hr size="4px">
     <h2>@link</h2>
-    <a href="http://www.google.com" >"Google" primary link</a>
-    <a href="https://www.facebook.com">"Facebook" secondary link</a>
+    <a class="link link-primary" href="http://www.google.com" target="_blank" >"google" primary link</a>
+    <a class="link link-secondary" href="https://www.facebook.com" target="_blank">"Facebook" secondary link</a>
 <hr size="4px">
     <h2>@lists</h2>
     <p>Unordered list:</p>
-    <ul>
+    <ul class="list-non-bullet">
         <li>item one</li>
         <li>item two</li>
         <li>item three</li>
@@ -42,15 +54,16 @@
         <li>item two</li>
         <li>item three</li>
     </ol>
+    <!-- <p class="para">Inline list: inline list is made using CSS. we'll do in next session as a challenge. </p> -->
     <p>Inline list: inline list is made using CSS. we'll do in next session as a challenge. </p>
     <ul>
-        <li>inline list one</li>
-        <li>inline list two</li>
-        <li>inline list three</li>
+        <li class="list-item-inline">inline list one</li>
+        <li class="list-item-inline">inline list two</li>
+        <li class="list-item-inline">inline list three</li>
     </ul>
-    <p>reverse order list: reverse order list is created using CSS. we'll do in CSS session.
+    <p>reverse order list: 
     </p>
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>eggs</li>
         <li>bread</li>
@@ -83,7 +96,7 @@
     </header>
     <hr size="4px">
     <h2>@section</h2>
-    <p>A section seperates parts of pages.in marketing website you would have seen a header followed by sections of feature,pricing,contact info etc </p>
+    <p class="para">A section seperates parts of pages.in marketing website you would have seen a header followed by sections of feature,pricing,contact info etc </p>
     <section>  
         <h3> white section</h3>
         <p>Thus will have white background.</p>
