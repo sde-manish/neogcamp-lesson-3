@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>component library</title>
+<!-- css 1st way of styling by using style tag -->
+    <!-- <style>
+        body{
+            color:red
+        }
+    </style> -->
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- css 2nd way of styling using style sttributes -->
+    <!--  <h1 style="color:blue">Manish's component library</h1> -->
+    <!-- <h1 id="lib-header">Manish's component library</h1> -->
+    <h1>Manish's component library</h1>
+    <P>I am attending neog.camp and i want to make a library which would make all my project look good.</P>
+
+    <hr size="4px">
+    <h2>@typography</h2><!-- what is typography?-->
+    <!-- typography explains how many methods are there to type texts-->
+    <h1>This is the biggest heading.</h1>
+    <h2>This is the second biggest.</h2>
+    <p>Let me show you normal text. This is a free flowing and will wrap at the end like a paragraph.</p>
+    <p>This paragrapgh will have a <strong>Bold</strong> text </p>
+    <!-- <smaller class="para">This is relatively smaller text.</smaller> -->
+    <smaller>This is relatively smaller text.</smaller>
+    <hr size="4px"><h2>@container</h2> <!-- The <div> HTML element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element). -->
+    
+    <h2>Fluid container</h2>
+    <dive class="container">This is a fluid container. it will go till the end of this page.</dive> <!-- <dive> is like placeholder in the page. it is used divide the page in different section so later CSS can be used easily. -->
+
+    <h2>Center container</h2>
+    <dive class="container container-center">This is a center container. it will go till spcified width.</dive> <!-- we usee CSS to make it look better. -->
+    <hr size="4px">
+    <h2>@link</h2>
+    <a class="link link-primary" href="http://www.google.com" target="_blank" >"google" primary link</a>
+    <a class="link link-secondary" href="https://www.facebook.com" target="_blank">"Facebook" secondary link</a>
+<hr size="4px">
+    <h2>@lists</h2>
+    <p>Unordered list:</p>
+    <ul class="list-non-bullet">
+        <li>item one</li>
+        <li>item two</li>
+        <li>item three</li>
+    </ul>
+    <p>Ordered list:</p>
+    <ol>
+        <li>item one </li>
+        <li>item two</li>
+        <li>item three</li>
+    </ol>
+    <!-- <p class="para">Inline list: inline list is made using CSS. we'll do in next session as a challenge. </p> -->
+    <p>Inline list: inline list is made using CSS. we'll do in next session as a challenge. </p>
+    <ul>
+        <li class="list-item-inline">inline list one</li>
+        <li class="list-item-inline">inline list two</li>
+        <li class="list-item-inline">inline list three</li>
+    </ul>
+    <p>reverse order list:  we'll do in CSS session.
+    </p>
+    <ol reversed>
+        <li>milk</li>
+        <li>eggs</li>
+        <li>bread</li>
+
+    </ol>
+    <nav class="navigation">
+        <div class="nav-brand">iAmBrand</div>
+        <ul class="list-non-bullet nav-pills">
+
+            <li class="list-item-inline">
+
+                <a class="nav-item link-active" href="/"> Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="nav-item" href="/">Product</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="nav-item" href="/">about</a>
+            </li>
+        </ul>  
+    </nav>
+
+    <h2 >@header</h2>
+    <header class="hero">
+        <img class="hero-img" src="react.svg">
+        <h1 class="hero-header"> adarsh balika <span style="color:var(--primary-color)">the web developer</span></h1>
+    
+    <hr size="4px">
+
+    </header>
+    <hr size="4px">
+    <h2>@section</h2>
+    <p class="para">A section seperates parts of pages.in marketing website you would have seen a header followed by sections of feature,pricing,contact info etc </p>
+    <section class="section">  
+       <div class="container-center">
+        <h1> white section</h1>
+        <p>(This will have white background.) 
+            The open Web presents incredible
+             opportunities for developers. To
+              take full advantage of these technologies,
+               you need to know how to use them. Below
+                you'll find links to our Web technology 
+                documentation.</p>
+
+       </div>
+    </section>
+
+    <section class="section ow">
+       <div class="container-center">
+        <h1> offwhite section.</h1>
+        <p> (This will have grey background.)
+            The open Web presents incredible
+             opportunities for developers. To
+              take full advantage of these technologies,
+               you need to know how to use them. Below 
+               you'll find links to our Web technology 
+               documentation.
+        </p>
+       </div>
+    </section>
+    <hr size="4px">
+    <h2>@footer</h2>
+    <footer class="footer container">
+        <div class="footer-header">some small heading inside the footer.</div>
+        <ul class="social-link list-non-bullet ">
+            <li class="list-item-inline">
+                <a class="link" href=" ">
+                    socialone
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href=" ">
+                    socialtwo
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href=" ">
+                    socialthree
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+
+</body>
+</html>

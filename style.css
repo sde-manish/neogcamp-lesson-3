@@ -17,11 +17,14 @@ h2{
 :root{
     --primary-color:#3b82f6;
     --dark-grey:#64748b;
+    --off-white:#e2e8f0;
+    --black:#1c1917;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap');
 body{
     font-family: 'Signika Negative', sans-serif;
+    margin: 0%;
 }
 
 /** container **/
@@ -40,13 +43,14 @@ body{
 
 .link{
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
 
 }
 .link-primary{
     background-color:var(--primary-color);
-    border-radius:0.7rem;
+    border-radius:0.5rem;
     color: white;
+
 }
 /* The Block, Element, Modifier methodology 
 (commonly referred to as BEM) is a popular naming
@@ -56,6 +60,7 @@ body{
     background-color: var(--primary-color);
     border-radius:0.5rem;
     border :1px solid var(--primary-color);
+    color: black;
 
 }
 hr{
@@ -77,16 +82,16 @@ hr{
 .navigation{
     padding-top: 0.5rem;
     padding-bottom: 0.2rem;
+    padding-left: 1rem;
     background-color:var(--primary-color);
     color:white;
-    border-radius:1rem;
+    border-bottom-left-radius:1rem;
 
 }
 .nav-item{
     color:white;
 }
-.navigation.
-.navigation.nav-pills{
+.nav-pills{
     text-align: right;
 }
 .navigation .nav-brand{
@@ -108,4 +113,34 @@ hr{
 .hero .hero-header{
     color: var(--dark-grey);
     text-align: center;
+}
+/* sections */
+.section{
+    padding: 2rem;
+}
+.section h1{
+    text-align:center;
+}
+.section.ow{
+    background-color:var(--off-white);
+    border-radius:0.3rem;
+    
+}
+/* footer */
+.footer{
+    background-color:var(--primary-color);
+    padding: 2rem 0.5rem;
+    border-top-right-radius:1rem;
+    text-align:center;
+    color: white;
+}
+.footer-header{
+    font-weight: bold;
+    font-size: large;
+}
+.link{
+    color:white;
+}
+.footer ul{
+    padding-inline-start: 0px;
 }
